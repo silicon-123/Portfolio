@@ -1,0 +1,193 @@
+a<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background color */
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            margin-top: 50px; /* To avoid content being hidden under the fixed navbar */
+        }
+        .home, .about, .projects {
+            margin: 20px 0;
+        }
+        .home .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .home .content .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .home .content .image {
+            flex: 1;
+            text-align: center;
+        }
+        .home .content .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .projects .project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .projects .project .description {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .projects .project .image {
+            flex: 1;
+            text-align:right;
+        }
+        .projects .project .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer a {
+            color: #f2f2f2;
+            padding: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#resume">Resume</a>
+    </div>
+
+    <div id="home" class="container home">
+        <div class="content">
+            <div class="text">
+                <h1>TANISHA PATHAK</h1>
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hi, I'm a web developer passionate about creating interactive and dynamic web applications. Explore my projects and get to know more about me.</p>
+            </div>
+            <div class="image">
+                <img src="tanisha.jpg" style="width: 50%;height:50%" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="container about">
+        <h2>About Me</h2>
+        <p>I am a recent graduate with a degree in Computer Science. I have a strong foundation in web development technologies including HTML, CSS, JavaScript, and frameworks like React and Angular. I am eager to apply my skills in a professional setting and continue learning and growing as a developer.</p>
+    </div>
+
+    <div id="projects" class="container projects">
+        <h2>Projects Section</h2>
+        <h3>Project 1:CLONE OF HEART-DISEASES PREDICTION WEBSITE</h3>
+        <div class="project">
+            
+            <div class="description">
+                <p>This website simply check whether a person is having chances of heart attack or not simply logging through the website.</p> 
+            </div>
+            <div class="image">
+                <img src="https://pbs.twimg.com/media/EMegdyIX0AAwahp.jpg" alt="Project 1 Image">
+            </div>
+            </div>
+            
+        </div>
+        <div id="projects" class="container projects">
+            <h3>Project 2:CLONE OF RESTURANT WEBSITE </h3>
+            <div class="project">
+             
+                <div class="description">
+                    <p>This website only contain frontend part like user will only able to see home page and menu list.</p>
+                </div>
+                <div class="image">
+                    <img src="http://www.widediscovery.com/common/images/offer-website-design-Restaurant-Website-Design.png" alt="Project 1 Image">
+                </div>
+                </div>
+        </div>
+     
+        <div id="projects" class="container projects">
+            <h3>Project 3:CLONE OF RESTURANT-WEBSITE INCLUDING BACKEND</h3>
+        <div class="project">
+            
+           <div class="description">
+            <p>This website contain integration of backend with frontend .In this user will simply login and able to order food.</p>
+           </div>
+            <div class="image">
+                <img src="https://www.honorhealth.com/sites/default/files/styles/large/public/eating-out-healthy.jpg?itok=-RvaJ1Rk" alt="Project 1 Image">
+        
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="container projects">
+        <h3>Project 4: CLONE OF ECOMMERCE WEBSITE USING JAVA</h3>
+    <div class="project">
+        
+       <div class="description">
+        <p>This website contain integration of backend with frontend  using java .In this user will simply login and able to order dresses,electronic gadget.</p>
+       </div>
+        <div class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/ShopClues_website_screenshot.png" alt="Project 1 Image">
+    
+        </div>
+    </div>
+</div>
+
+    <div id="resume" class="container resume">
+        <a href="Resume.html"><h2>Resume</h2></a>
+       
+    </div>
+
+    <div  class="footer">
+        <img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-znrfbdj4.png" style="width:30px;height:30px" alt=""/>
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"style="width:30px;height:30px"  alt=""/>
+        <img src="https://static-00.iconduck.com/assets.00/instagram-icon-1024x1024-hze78n7d.png" style="width:30px;height:30px" alt=""/>
+    </div>
+</body>
+</html>
+ 
